@@ -1,0 +1,31 @@
+class star {
+  
+  int age =0;
+  float eX;
+  float eY;
+  float eW;
+  float eH;
+  
+  star (float tempx , float tempy){
+    
+    eX=tempx;
+    eY=tempy;
+     
+  }
+  
+  void drawStar(){
+    int red = 500-age;
+    int yellow = age;
+    fill (red,yellow,0);
+    eW= random(0,200);
+    eH=random(0,200);
+    ellipseMode(CENTER);
+    ellipse(eX,eY,eW,eH);
+    age++;
+    
+    
+  }
+  
+  
+  
+}
